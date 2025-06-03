@@ -55,8 +55,7 @@ class AuthController
             $confirmPassword = $_POST['confirm_password'] ?? ''; 
  
             $user = User::findById($_SESSION['user_id']); 
-            if (!$user || !password_verify($currentPassword, 
-$user->password)) { 
+            if (!$user || !password_verify($currentPassword, $user->password)) { 
                 $error = 'Current password is incorrect'; 
                 include '../views/auth/change_password.php'; 
                 return; 
