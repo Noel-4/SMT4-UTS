@@ -16,8 +16,7 @@ class AuthController
             if ($user && password_verify($password, $user->password)) 
 { 
                 $_SESSION['user_id'] = $user->id; 
-                header('Location: 
-index.php?controller=auth&action=dashboard'); 
+                header('Location: index.php?controller=auth&action=dashboard'); 
                 exit(); 
             } else { 
                 $error = 'Invalid username or password'; 
@@ -34,8 +33,7 @@ index.php?controller=auth&action=dashboard');
             session_start(); 
         } 
         if (!isset($_SESSION['user_id'])) { 
-            header('Location: 
-index.php?controller=auth&action=login'); 
+            header('Location: index.php?controller=auth&action=login'); 
             exit(); 
         } 
         include '../views/auth/dashboard.php'; 
@@ -47,8 +45,7 @@ index.php?controller=auth&action=login');
             session_start(); 
         } 
         if (!isset($_SESSION['user_id'])) { 
-            header('Location: 
-index.php?controller=auth&action=login'); 
+            header('Location: index.php?controller=auth&action=login'); 
             exit(); 
         } 
  

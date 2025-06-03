@@ -11,7 +11,7 @@
     <div class="container mt-5"> 
         <h2>Dashboard</h2> 
         <p>Welcome to your dashboard!</p> 
-        <a href="index.php?controller=buku&action=index" class="btn btn-primary mb-3">Manage Buku</a> 
+        <a href="index.php?controller=buku&action=index" class="btn btn-primary mb-3">Manage Menu</a> 
         <br /> 
         <a href="index.php?controller=auth&action=changePassword" class="btn btn-warning">Change Password</a> 
         <a href="index.php?controller=auth&action=logout" class="btn btn-danger">Logout</a> 

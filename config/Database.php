@@ -4,7 +4,7 @@ private static $instance = null;
     private $connection; 
  
     private $host = 'localhost'; 
-    private $dbName = 'perpustakaan'; 
+    private $dbName = 'menu_db'; 
     private $username = 'root'; 
     private $password = ''; 
  
